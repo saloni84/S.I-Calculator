@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLASS MORPHIISM - SIMPLE INTEREST CALCULATOR</title>
+    <link rel="stylesheet" href="/style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Interest Calculator</h1>
+        <div class="inpobox">
+            <input type="number" id="amount" class="amount" placeholder="Enter Total amount"><br>
+            <input type="number" id="time" class="time" placeholder="Enter Time(Years)"><br>
+            <input type="number" id="rate" class="rate" placeholder="Enter Rate"><br>
+            <button onclick="Calculate()">Calculate</button>
+            <h2 id="result">SIMPLE INTEREST :</h2>
+        </div>
+    </div>
+    
+</body>
+<script>
+    function Calculate(){
+    let p=document.getElementById('amount').value;
+    let t=document.getElementById('rate').value;
+    let r=document.getElementById('time').value;
+    I=(p*t*r)/100;
+    document.getElementById('result').innerHTML=""+I;
+}
+</script>
+   
+
+    
+
+</html>
